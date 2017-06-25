@@ -9,7 +9,12 @@ Consider use range(#begin, #end) method
 """
 
 def main():
-    pass
+    lista = []
+    for x in range(2000,3200):
+        if (x % 7 == 0 and x % 5 != 0):
+            lista.append(x)
+            print(x, end=', ')
+    #print(lista)
 
 if __name__ == '__main__':
     main()
