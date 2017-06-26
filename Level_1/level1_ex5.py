@@ -11,3 +11,16 @@ The sequence looks like this: 1, 1, 2, 3, 5, 8, 13,
 
 
 """
+x = int(input("How many Fibonnaci numbers do you want to generate? "))
+
+def fibo(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibo(n-1) + fibo(n-2)
+
+fiboList=[fibo(n) for n in range(1,x+1)]
+
+print(fiboList)
